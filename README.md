@@ -1,6 +1,6 @@
 ﻿# Predicción de Tráfico Vehicular
 **Materia:** Series Temporales  
-**Autor:** Francisco  
+**Autor:** Francisco Moreno
 **Institución:** FIUNA  
 
 ---
@@ -89,13 +89,20 @@ Modelo de Facebook para series temporales con estacionalidad diaria y semanal. C
 
 | Archivo | Descripción |
 |---|---|
-| esults/eda_serie_completa.png | Serie temporal completa |
-| esults/eda_distribucion.png | Distribución y boxplot |
-| esults/eda_patron_hora.png | Tráfico promedio por hora |
-| esults/eda_patron_dia.png | Tráfico promedio por día |
-| esults/real_vs_predicho.png | Predicciones vs valores reales |
-| esults/comparativa_modelos.png | Comparativa de métricas |
-| esults/residuales.png | Análisis de residuales |
+| 
+esults/eda_serie_completa.png | Serie temporal completa |
+| 
+esults/eda_distribucion.png | Distribución y boxplot |
+| 
+esults/eda_patron_hora.png | Tráfico promedio por hora |
+| 
+esults/eda_patron_dia.png | Tráfico promedio por día |
+| 
+esults/real_vs_predicho.png | Predicciones vs valores reales |
+| 
+esults/comparativa_modelos.png | Comparativa de métricas |
+| 
+esults/residuales.png | Análisis de residuales |
 
 ---
 
@@ -109,3 +116,36 @@ Modelo de Facebook para series temporales con estacionalidad diaria y semanal. C
 ---
 
 ## 8. Estructura del Repositorio
+proyecto_ts/
+│
+├── data/
+│ ├── datos.csv
+│ └── datos_procesados.csv
+│
+├── notebooks/
+│ ├── 01_preprocesamiento.ipynb
+│ ├── 02_modelos.ipynb
+│ ├── 03_evaluacion.ipynb
+│ └── 04_eda.ipynb
+│
+├── results/
+│ ├── metricas.csv
+│ └── graficos/
+│
+├── README.md
+└── requirements.txt
+
+
+---
+
+## 9. Reproducibilidad
+
+```bash
+pip install -r requirements.txt
+```
+
+Ejecutar los notebooks en orden:
+1. `01_preprocesamiento.ipynb`
+2. `04_eda.ipynb`
+3. `02_modelos.ipynb`
+4. `03_evaluacion.ipynb`
