@@ -119,18 +119,21 @@ esults/residuales.png | Análisis de residuales |
 proyecto_ts/
 │
 ├── data/
-│ ├── datos.csv
-│ └── datos_procesados.csv
+│   └── datos_procesados.csv
 │
 ├── notebooks/
-│ ├── 01_preprocesamiento.ipynb
-│ ├── 02_modelos.ipynb
-│ ├── 03_evaluacion.ipynb
-│ └── 04_eda.ipynb
+│   ├── 01_preprocesamiento.ipynb
+│   ├── 02_modelos.ipynb
+│   ├── 03_evaluacion.ipynb
+│   └── 04_eda.ipynb
 │
 ├── results/
-│ ├── metricas.csv
-│ └── graficos/
+│   ├── metricas.csv
+│   ├── eda_distribucion.png
+│   ├── eda_patron_dia.png
+│   ├── eda_patron_hora.png
+│   ├── eda_serie_completa.png
+│   └── realvspredicho.png
 │
 ├── README.md
 └── requirements.txt
